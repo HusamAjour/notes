@@ -1,5 +1,3 @@
-# LAB - 01
-
 ## Node Ecosystem
 
 ### Author: Husam Ajour
