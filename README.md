@@ -7,7 +7,8 @@
 ### Links and resources
 
 | PR 1| [Link 1](https://github.com/HusamAjour/notes/pull/1)
-| PR 2| [Link 2](https://github.com/HusamAjour/notes/pull/1)
+
+| PR 2| [Link 2](https://github.com/HusamAjour/notes/pull/4)
 
 ### Modules
 
@@ -17,8 +18,11 @@
 ### Packages
 
 `minimist`
+
 `random-id`
+
 `random-id`
+
 `jest`
 
 ### How to initialize/run the application
