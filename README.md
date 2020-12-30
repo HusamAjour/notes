@@ -10,6 +10,7 @@
 
 | PR 3| [Link 3](https://github.com/HusamAjour/notes/pull/6)
 
+| PR 4| [Link 4](https://github.com/HusamAjour/notes/pull/6)
 
 ### Modules
 
@@ -20,13 +21,11 @@
 
 `minimist`
 
-`random-id`
-
-`random-id`
-
 `jest`
 
 `mongoose`
+
+`@code-fellows/supergoose`
 
 ### How to initialize/run the application
 
