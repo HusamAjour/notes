@@ -8,7 +8,7 @@
 
 | PR 2| [Link 2](https://github.com/HusamAjour/notes/pull/4)
 
-| PR 3| [Link 3](https://github.com/HusamAjour/notes/pull/4)
+| PR 3| [Link 3](https://github.com/HusamAjour/notes/pull/6)
 
 
 ### Modules
