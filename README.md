@@ -34,6 +34,14 @@
 * e.g `node index.js -a 'note text -c anyCategory`
 * e.g `./index.js --add 'note text --category anyCategory`
 * e.g `./index.js -a 'note text -c anyCategory`
+* e.g `node index.js --list`
+* e.g `node index.js -l`
+* e.g `./index.js --list`
+* e.g `./index.js -l`
+* e.g `node index.js --delete someid`
+* e.g `node index.js -d someid`
+* e.g `./index.js --delete someid`
+* e.g `./index.js -d someid`
 
 ### Tests
 
