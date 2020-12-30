@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --coverage --verbose"
+    "test": "jest --verbose --coverage"
   },
   "jest": {
     "testEnvironment": "node"
@@ -26,9 +26,5 @@
     "jest-cli": "^26.6.3",
     "minimist": "^1.2.5",
     "mongoose": "^5.11.9",
-    "random": "^2.2.0",
-    "random-id": "^1.0.4",
-    "sinon": "^9.2.2",
-    "supergoose": "^0.2.6"
   }
 }

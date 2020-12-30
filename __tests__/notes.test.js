@@ -1,34 +1,22 @@
 'use strict';
 
-const mongoose = require('mongoose');
+require('@code-fellows/supergoose');
 
-const Note = require('../lib/notes');
-const MONGOOSE_URI = 'mongodb://localhost:27017/notes';
+const notesCollection = require('../models/notes-collection');
 
-mongoose.connect(MONGOOSE_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useCreateIndex: true,
-    useFindAndModify: false
-});
-jest.spyOn(global.console, 'log');
+// jest.spyOn(global.console, 'log');
 
-
-
-describe('Input Module', () => {
-   
-   it(`It shouldn't show a message on the console when action is not in Add, List, and Delete .`, () => {
-        let test = new Note({ action: 'put', payload: 'Hello World!' });
-        expect(console.log).not.toHaveBeenCalled();
+describe('Note Module', () => {
+  it(`should add a note without category.`, () => {
+    let testObj = {
+      text: 'Hello World!',
+      category: 'test',
+    };
+    return notesCollection.create(testObj).then((result) => {
+      console.log('result : ', result);
+      Object.keys(testObj).forEach((key) => {
+        expect(result[key]).toEqual(testObj[key]);
+      });
     });
-
-    it(`It shouldn't show a message on the console when action is not in Add, List, and Delete .`, () => {
-        let test = new Note({ action: 'put', payload: 'Hello World!' });
-        expect(console.log).not.toHaveBeenCalled();
-    });
-    /*mongoose.disconnect();
-    it(`It should show a message on the console when action is add with a non-empty note body and category.`, () => {
-        let test = new Note({ action: 'Add', payload: 'Hello World!', category: 'test' });
-        expect(console.log).toHaveBeenCalled();
-    });*/
+  });
 });
