@@ -6,6 +6,9 @@
   "scripts": {
     "test": "jest --coverage --verbose"
   },
+  "jest": {
+    "testEnvironment": "node"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/HusamAjour/notes.git"
@@ -18,10 +21,14 @@
   },
   "homepage": "https://github.com/HusamAjour/notes#readme",
   "dependencies": {
+    "@code-fellows/supergoose": "^1.0.11",
     "jest": "^26.6.3",
     "jest-cli": "^26.6.3",
     "minimist": "^1.2.5",
+    "mongoose": "^5.11.9",
     "random": "^2.2.0",
-    "random-id": "^1.0.4"
+    "random-id": "^1.0.4",
+    "sinon": "^9.2.2",
+    "supergoose": "^0.2.6"
   }
 }
